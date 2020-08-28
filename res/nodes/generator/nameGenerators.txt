@@ -1,0 +1,16 @@
+continent_generator:
+	name_fragments = "ler din on one dor in ine ev an on th ar go de gon vin ket esh nar ga"
+
+country_generator:
+	name_fragments = "mor so dor vn ho dw a ar mo mok en on be loth e ne lon ga sir res tir val qua ath ma hal or wi rion la"
+
+province_generator:
+	name_fragments = "as hi gar roth nia mis gard tha na lin bur so thrope val vn hal dra la sil"
+
+city_generator:
+	name_fragments = "mor gard sau va dor ron kor as al all fall sto brey moor sir ond onde in da leah ar ca ulb il n am"
+
+tavern_generator:
+	name_start  = "a the" 
+	name_middle = "blue red green gold golden half-full loved halved crossed old new rusty"
+	name_end    = "lodge warrior cup archer flail swords sword wain thorn spears lightning dragon king queen"

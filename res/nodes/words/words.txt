@@ -1,0 +1,12 @@
+import "contractions.txt"
+import "pronouns.txt"
+import "preposition.txt"
+import "conjunction.txt"
+import "noun.txt"
+import "adjective.txt"
+import "adverb.txt"
+import "verb.txt"
+import "determiners.txt"
+
+like:
+	is_a preposition conjunction noun adjective adverb verb

@@ -1,0 +1,6 @@
+import "mind.txt"
+
+base_npc: 
+	has_a "located_in"
+	has_a "name"
+	has_a mind

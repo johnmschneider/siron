@@ -1,0 +1,49 @@
+import "place.txt"
+import "../generic/furnitures.txt"
+import "placeAtmospheres.txt"
+import "../npcs/bartender.txt"
+
+settlement_place:
+	is_a place
+
+	abstract = "true"
+
+	' what type of settlement(s) this place can spawn in
+	has_a "spawns_in"
+	has_a "located_in"
+	has_a place_atmosphere
+
+building_floor:
+	is_a place
+	has_a "level"
+
+roof:
+	has_a "made_of_materials"
+
+building:
+	is_a settlement_place
+	has_a "north_wall east_wall south_wall west_wall roof building_floor"
+
+tavern:
+	is_a building
+	spawns_in = "city town village"
+	has_a bar
+	has_a bartender
+	
+inn:
+	is_a building
+	spawns_in = "city town village"
+
+door:
+	' the wall this door is in
+	has_a "located_in"
+	has_a "is_open"
+
+medieval_tavern:
+	is_a tavern
+
+	north_wall = "stone"
+	east_wall = "stone"
+	south_wall = "stone"
+	west_wall = "stone"
+	has_a "front_door"

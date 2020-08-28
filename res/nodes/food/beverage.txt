@@ -1,0 +1,26 @@
+import "food.txt"
+
+beverage:
+	is_a food
+	has_a "milliliters_left"
+
+alcoholic_beverage:
+	poisonous = "true"
+	is_a beverage
+
+wine:
+	is_a alcoholic_beverage
+	has_a color
+	ingredients = "grapes"
+
+white_wine:
+	is_a wine
+	color = "white"
+
+red_wine:
+	is_a wine
+	color = "red"
+
+beer:
+	is_a alcoholic_beverage
+	ingredients = "hops barley"

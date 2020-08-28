@@ -1,0 +1,6 @@
+import "tarotArcana.txt"
+import "tarotSuit.txt"
+
+tarot:
+	has_a tarotArcana
+	has_a tarotSuit

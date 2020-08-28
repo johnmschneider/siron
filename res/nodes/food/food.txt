@@ -1,0 +1,7 @@
+import "edible.txt"
+
+food:
+	is_a edible
+	poisonous = "false"
+	has_a "ingredients"
+	has_a "culture_of_origin"

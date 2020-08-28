@@ -1,0 +1,6 @@
+import "../generator/tarot/tarotRealm.txt"
+
+mind:
+	' what nodes this mind knows (or thinks it knows) about
+	has_a "information_known"
+	is_a tarotRealm

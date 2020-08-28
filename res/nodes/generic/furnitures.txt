@@ -1,0 +1,26 @@
+import "furniture.txt"
+
+cupboard:
+	is_a furniture
+	
+	can_sit = "false"
+
+	has_a "stored_items"
+
+front_desk:
+	is_a furniture
+
+	can_sit = "true"
+	weight = "500 lbs"
+
+	has_a "surface"
+
+bar:
+	is_a front_desk
+	
+	has_a "chairs"
+	has_a cupboard
+
+chair:
+	is_a furniture
+	can_sit = "true"

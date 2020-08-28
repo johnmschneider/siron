@@ -1,0 +1,2 @@
+edible:
+	has_a poisonous

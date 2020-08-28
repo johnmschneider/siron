@@ -1,0 +1,7 @@
+tarotArcana;
+
+major:
+	is_a tarotArcana
+
+minor:
+	is_a tarotArcana

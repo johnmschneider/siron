@@ -1,0 +1,2 @@
+import "genericPlaces.txt"
+import "settlementPlaces.txt"

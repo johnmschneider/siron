@@ -1,0 +1,38 @@
+import "tarotSymbolism.txt"
+import "../../generic/colors.txt"
+import "../../generic/season.txt"
+import "tarotRealm.txt"
+
+tarotSuit:
+	has_a "symbolisms"
+	has_a color
+	has_a season
+	has_a tarotRealm
+
+pentacles:
+	is_a tarotSuit
+	symbolisms = "health wealth physical"
+	color = green
+	season = fall
+	tarotRealm = home
+
+wands:
+	is_a tarotSuit
+	symbolisms = "creativity action passion"
+	color = yellow
+	season = spring
+	tarotRealm = spirit
+
+cups:
+	is_a tarotSuit
+	symbolisms = "love emotion empathy"
+	color = red
+	season = summer
+	tarotRealm = heart
+
+swords:
+	is_a tarotSuit
+	symbolisms = "thought challenge observation"
+	color = indigo
+	season = winter
+	tarotRealm = mind

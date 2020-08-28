@@ -1,0 +1,16 @@
+place_atmosphere:
+	'how intense this atmosphere is on a scale of 0 to 1,
+	'	0 being not there, 1 being fully intense
+	has_a "intensity"
+
+run_down:
+	is_a place_atmosphere
+
+quiet:
+	is_a place_atmosphere
+
+quaint:
+	is_a place_atmosphere
+	
+well_kept:
+	is_a place_atmosphere

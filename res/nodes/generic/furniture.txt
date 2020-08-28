@@ -1,0 +1,6 @@
+furniture:
+	has_a "made_of_materials"
+	has_a "can_sit"
+	has_a "weight"
+	has_a "located_in"
+	has_a "description"

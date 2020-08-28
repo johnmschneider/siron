@@ -1,0 +1,5 @@
+import "base_npc.txt"
+
+bartender:
+	is_a base_npc
+	give_drink_trigger = "[I\'d like a drink]"

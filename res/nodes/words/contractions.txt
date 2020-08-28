@@ -1,0 +1,6 @@
+contraction:
+	has_a "uncontracted_form"
+
+i\'d:
+	is_a contraction
+	uncontracted_form = "i would"

@@ -1,0 +1,7 @@
+pronoun;
+
+i:
+	is_a pronoun
+
+you: 
+	is_a pronoun

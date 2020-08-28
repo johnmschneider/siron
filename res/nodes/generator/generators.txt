@@ -1,0 +1,2 @@
+import "tarot/tarot.txt"
+import "nameGenerators.txt"

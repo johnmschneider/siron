@@ -1,0 +1,6 @@
+determiner:
+	has_a "count"
+
+a:
+	is_a determiner
+	count = "1"

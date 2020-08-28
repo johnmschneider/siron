@@ -1,0 +1,11 @@
+color;
+red:
+	is_a color
+yellow:
+	is_a color
+green:
+	is_a color
+pale_green:
+	is_a color
+indigo:
+	is_a color

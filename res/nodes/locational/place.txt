@@ -1,0 +1,10 @@
+import "../generic/position.txt"
+
+place:
+	has_a position
+	has_a "description"
+
+	has_a place_size
+
+place_size:
+	sizes = "small moderately_sized large"

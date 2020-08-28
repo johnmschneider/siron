@@ -1,0 +1,45 @@
+import "place.txt"
+
+' generic types of place
+continent:
+	is_a place
+
+country:
+	is_a place
+	has_a "located_in"
+
+country_subdivision:
+	has_a "located_in"
+	plural_form = "country_subdivisions"
+
+province:
+	is_a country_subdivision
+	plural_form = "provinces"
+
+state: 
+	is_a country_subdivision
+	plural_form = "states"
+
+settlement_size:
+	sizes = "city town village camp"
+
+settlement:
+	is_a place
+	has_a settlement_size
+	are_sub_places_generated = "false"
+
+city:
+	is_a settlement
+	settlement_size = "city"
+
+town:
+	is_a settlement
+	settlement_size = "town"
+
+village:
+	is_a settlement
+	settlement_size = "village"
+
+camp:
+	is_a settlement
+	settlement_size = "camp"

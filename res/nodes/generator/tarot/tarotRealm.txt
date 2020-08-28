@@ -1,0 +1,14 @@
+tarotRealm;
+
+import "../../npcs/mind.txt"
+
+home:
+	is_a tarotRealm
+
+spirit:
+	is_a tarotRealm
+
+heart:
+	is_a tarotRealm
+
+' Mind is declared in its own file

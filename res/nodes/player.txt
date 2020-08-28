@@ -1,0 +1,4 @@
+import "npcs/base_npc.txt"
+
+player:
+	is_a base_npc

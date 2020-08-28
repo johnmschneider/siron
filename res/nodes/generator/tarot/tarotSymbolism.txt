@@ -1,0 +1,37 @@
+tarotSymbolism;
+
+health:
+	is_a tarotSymbolism
+
+wealth:
+	is_a tarotSymbolism
+
+physical:
+	is_a tarotSymbolism
+
+creativity:
+	is_a tarotSymbolism
+
+action:
+	is_a tarotSymbolism
+
+passion:
+	is_a tarotSymbolism
+
+love:
+	is_a tarotSymbolism
+
+emotion:
+	is_a tarotSymbolism
+
+empathy:
+	is_a tarotSymbolism
+
+thought:
+	is_a tarotSymbolism
+
+challenge:
+	is_a tarotSymbolism
+
+observation:
+	is_a tarotSymbolism

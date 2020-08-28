@@ -1,0 +1,13 @@
+season;
+
+fall:
+	is_a season
+
+spring:
+	is_a season
+
+summer:
+	is_a season
+
+winter:
+	is_a season

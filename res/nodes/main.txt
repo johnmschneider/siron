@@ -1,0 +1,19 @@
+import "generic/colors.txt"
+import "locational/places.txt"
+import "generator/generators.txt"
+import "player.txt"
+import "words/words.txt"
+
+baseNode1;
+baseNode2;
+thirdPropExample;
+
+newNode:
+    is_a baseNode1 baseNode2
+    is_color red
+    other_property thirdPropExample
+
+newNode2:
+    is_a newNode
+
+baseNode3;
