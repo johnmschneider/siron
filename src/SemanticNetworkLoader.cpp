@@ -74,30 +74,25 @@ string SemanticNetworkLoader::getAbsoluteFilePath(string relativeFilePath) {
 vector<NodeTemplate> SemanticNetworkLoader::parseNodeTemplateLanguage(string_vector rawFileContents, SemanticNetwork &loadImportsInto, string thisAbsoluteFilePath) {
 
 	vector<NodeTemplate> allNodeTemplates;
-
-	string_vector nodesToAdd;
-	vector<string_vector_vector> linksToAdd;
-	vector<string_vector_vector> simpleFieldsToAdd;
-	vector<string_vector_vector> nodeFieldsToAdd;
 	LineHandlerArgs args;
 
 	baseDirectory = getBaseDirectoryFromFilePath(thisAbsoluteFilePath);
 	importedFiles.push_back(thisAbsoluteFilePath);
 
-	args.nodesToAdd = &nodesToAdd;
-	args.linksToAdd = &linksToAdd;
-	args.simpleFieldsToAdd = &simpleFieldsToAdd;
-	args.nodeFieldsToAdd = &nodeFieldsToAdd;
+	args.nodesToAdd = &string_vector();
+	args.linksToAdd = &vector<string_vector_vector>();
+	args.simpleFieldsToAdd = &vector<string_vector_vector>();
+	args.nodeFieldsToAdd = &vector<string_vector_vector>();
 	args.loadImportsInto = &loadImportsInto;
 	args.thisAbsoluteFilePath = thisAbsoluteFilePath;
 
 	handleLines(rawFileContents, args);
 
-	for (int32_t i = 0; i < nodesToAdd.size(); i++) {
-		string				 node		  = nodesToAdd[i];
-		string_vector_vector links		  = linksToAdd[i];
-		string_vector_vector simpleFields = simpleFieldsToAdd[i];
-		string_vector_vector nodeFields   = nodeFieldsToAdd[i];
+	for (int32_t i = 0; i < args.nodesToAdd->size(); i++) {
+		string				 node		  = (*args.nodesToAdd)[i];
+		string_vector_vector links		  = (*args.linksToAdd)[i];
+		string_vector_vector simpleFields = (*args.simpleFieldsToAdd)[i];
+		string_vector_vector nodeFields   = (*args.nodeFieldsToAdd)[i];
 
 		NodeTemplate nodeTemplate(node, links, simpleFields, nodeFields);
 		allNodeTemplates.push_back(nodeTemplate);
